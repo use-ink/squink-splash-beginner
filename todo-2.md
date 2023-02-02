@@ -9,7 +9,7 @@ cd squink-splash-beginner/
 
 ## `lib.rs`: change line 28 
 
-Set your favorite numbers between 0-15 for both x and y.
+Set your favorite numbers between 0-15.
 
 ## Build your Player Contract
 
@@ -29,38 +29,38 @@ target/ink/basic_player.contract
 
 Open [Contracts UI](https://github.com/paritytech/contracts-ui).
 
-<img src="/img/rococo.png" />
+<img src=".images/rococo.png" />
 
-<img src="/img/s1.png" />
+<img src=".images/s1.png" />
 
-<img src="/img/s2.png" />
+<img src=".images/s2.png" />
 
-<img src="/img/s3.png" />
+<img src=".images/s3.png" />
 
 Upload `target/ink/basic_player.contract`:
 
-<img src="/img/s4.png" />
+<img src=".images/s4.png" />
 
-<img src="/img/s5.png" />
+<img src=".images/s5.png" />
 
-<img src="/img/s6.png" />
+<img src=".images/s6.png" />
 
 ## Upload & Instantiate `game-metadata.json`
 
-<img src="/img/s7.png" />
+<img src=".images/s7.png" />
 
-<img src="/img/s8.png" />
+<img src=".images/s8.png" />
 
-<img src="/img/s9.png" />
+<img src=".images/s9.png" />
 
-<img src="/img/s10.png" />
+<img src=".images/s10.png" />
 
-<img src="/img/s11.png" />
+<img src=".images/s11.png" />
 
-<img src="/img/s12.png" />
+<img src=".images/s12.png" />
 
 ## Register your player
 
-<img src="/img/s13.png" />
+<img src=".images/s13.png" />
 
-<img src="/img/s14.png" />
+<img src=".images/s14.png" />

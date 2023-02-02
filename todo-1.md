@@ -15,11 +15,11 @@ If successful you should see an output when executing: `cargo contract --help`.
 
 ## Install `polkadot-js` Browser Extension
 
-[Click here](https://polkadot.js.org/extension/).
+[Click here.](https://polkadot.js.org/extension/)
 
 ## Create Account in Browser Extension
 
-See [here](https://wiki.polkadot.network/docs/learn-account-generation) for a detailed guide.
+[See the guide here.](https://support.polkadot.network/support/solutions/articles/65000180529)
 
 ## Get `ROC` Tokens via Faucet
 
@@ -33,4 +33,4 @@ Write:
 You can see the funds under
 [the "Accounts" tab for the `Contracts` parachain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-contracts-rpc.polkadot.io#/accounts).
 
-<img src="/img/roc-in-wallet.png" alt="Rococo testnet tokens in wallet" />
+<img src=".images/roc-in-wallet.png" alt="Rococo testnet tokens in wallet" />
