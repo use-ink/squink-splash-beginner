@@ -49,13 +49,7 @@ Upload `target/ink/basic_player.contract`:
 
 <img src=".images/s8.png" />
 
-<img src=".images/s9.png" />
-
 <img src=".images/s10.png" />
-
-<img src=".images/s11.png" />
-
-<img src=".images/s12.png" />
 
 ## Register your player
 
