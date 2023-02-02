@@ -35,8 +35,6 @@ target/ink/basic_player.contract
 
 <img src=".images/s2.png" />
 
-<img src=".images/s3.png" />
-
 Upload `target/ink/basic_player.contract`:
 
 <img src=".images/s4.png" />
