@@ -27,7 +27,7 @@ target/ink/basic_player.contract
 
 ## Upload & Instantiate Your Player
 
-Open [Contracts UI](https://github.com/paritytech/contracts-ui).
+[Open Contracts UI here](https://github.com/paritytech/contracts-ui).
 
 <img src=".images/rococo.png" />
 
