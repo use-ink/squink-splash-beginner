@@ -7,7 +7,7 @@
 ## Install `cargo-contract`
 
 ```bash
-rustup component add rust-src.
+rustup component add rust-src
 cargo install --force --locked --version 2.0.0-rc.1 cargo-contract 
 ```
 
