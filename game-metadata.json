@@ -1,7 +1,7 @@
 {
   "source": {
-    "hash": "0x71735bf655d6cfe9e67cc83bc48b6b4be40f751a634db4771ae5b350f0b429ad",
-    "language": "ink! 4.0.0-beta.1",
+    "hash": "0x571da9282d8a1370ea9155d7ce3ca4fde01e480d1ead4f1fcfc1c239f7b9ee85",
+    "language": "ink! 4.0.0-rc",
     "compiler": "rustc 1.67.0",
     "build_info": {
       "build_mode": "Release",
@@ -64,7 +64,7 @@
         "docs": [
           "Create a new game.",
           "",
-          "- `dimensions`: (width,height) Of the board",
+          "- `dimensions`: (width, height) of the board.",
           "- `buy_in`: The amount of balance each player needs to submit in order to play.",
           "- `forming_rounds`: Number of blocks that needs to pass until anyone can start the game.",
           "- `rounds`: The number of blocks a game can be played for.",
@@ -102,7 +102,7 @@
           }
         ],
         "docs": [
-          " A player joined the game by calling `register_player`."
+          " A player joined the game by calling [`register_player`]."
         ],
         "label": "PlayerRegistered"
       },
@@ -110,7 +110,31 @@
         "args": [
           {
             "docs": [
-              " The account start called `start_game`."
+              " The number of rounds played."
+            ],
+            "indexed": false,
+            "label": "rounds_played",
+            "type": {
+              "displayName": [
+                "u32"
+              ],
+              "type": 0
+            }
+          }
+        ],
+        "docs": [
+          " The rounds played have increased. This is used for the client side to keep",
+          " the [`TurnTaken`] events and \"Blocks\" UI in sync. Events are emitted before",
+          " block number changes, so re-fetching [`rounds_played`] on a block change",
+          " causes a brief delay in the UI."
+        ],
+        "label": "RoundIncremented"
+      },
+      {
+        "args": [
+          {
+            "docs": [
+              " The account start called [`start_game`]."
             ],
             "indexed": false,
             "label": "starter",
@@ -123,7 +147,7 @@
           }
         ],
         "docs": [
-          " Someone started the game by calling `start_game`."
+          " Someone started the game by calling [`start_game`]."
         ],
         "label": "GameStarted"
       },
@@ -178,11 +202,11 @@
           }
         ],
         "docs": [
-          " Someone ended the game by calling `end_game`.",
+          " Someone ended the game by calling [`end_game`].",
           "",
           " This event doesn't contain information about the winner because the contract still",
           " exists. Interested parties can read this information from the contract by calling",
-          " `state` and `player_scores`."
+          " [`state`] and [`player_scores`]."
         ],
         "label": "GameEnded"
       },
@@ -253,9 +277,9 @@
       {
         "args": [],
         "docs": [
-          " When enough time has passed no new turns can be submitted.",
-          " Then everybody can call this to end the game and trigger the payout to",
-          " the winner."
+          " When enough time has passed, no new turns can be submitted.",
+          " Then anybody may call this function to end the game and",
+          " trigger the payout to the winner."
         ],
         "label": "end_game",
         "mutates": true,
@@ -308,7 +332,10 @@
       {
         "args": [],
         "docs": [
-          " At most once per block anyone can trigger one turn of the game."
+          " This is the actual game loop.",
+          "",
+          " It can be called by anyone and triggers at most one turn",
+          " of the game per block."
         ],
         "label": "submit_turn",
         "mutates": true,
@@ -325,7 +352,7 @@
       {
         "args": [],
         "docs": [
-          " The buy in amount to register a player"
+          " The buy-in amount to register a player."
         ],
         "label": "buy_in_amount",
         "mutates": false,
@@ -376,9 +403,10 @@
       {
         "args": [],
         "docs": [
-          " Describes into many groups the players should be partioned.",
+          " Describes into many groups the players should be partitioned.",
           "",
-          " How often `submit_turn` needs to be called until all players made a turn."
+          " How often [`submit_turn`] needs to be called until all players",
+          " made a turn."
         ],
         "label": "num_batches",
         "mutates": false,
@@ -428,7 +456,9 @@
       },
       {
         "args": [],
-        "docs": [],
+        "docs": [
+          " Returns `true` if the game is running."
+        ],
         "label": "is_running",
         "mutates": false,
         "payable": false,
