@@ -25,6 +25,7 @@ mod player {
         /// a defined selector of `0`.
         #[ink(message, selector = 0)]
         pub fn your_turn(&self) -> Option<(u32, u32)> {
+            // TODO: return the turn you want to make (x, y)
             Some((0, 0))
         }
     }
