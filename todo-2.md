@@ -9,7 +9,14 @@ cd squink-splash-beginner/
 
 ## `lib.rs`: change line 28 
 
-Set your favorite numbers between 0-15.
+Replace both variables (`x` and `y`) with any number 1-25. 
+For example: 
+```rust 
+pub fn your_turn(&self) -> Option<(u32, u32)> {
+   // TODO: return the turn you want to make (x, y)
+   Some((1, 2))
+}
+```
 
 ## Build your Player Contract
 
