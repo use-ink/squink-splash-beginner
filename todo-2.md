@@ -9,7 +9,7 @@ cd squink-splash-beginner/
 
 ## `lib.rs`: change line 28 
 
-Set your favorite numbers between 0-15.
+Set your favorite numbers between 0-25.
 
 ## Build your Player Contract
 
