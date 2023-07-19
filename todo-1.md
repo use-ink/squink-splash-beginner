@@ -23,12 +23,7 @@ If successful you should see an output when executing: `cargo contract --help`.
 
 ## Get `ROC` Tokens via Faucet
 
-Join Matrix room: [#rococo-faucet:matrix.org](https://matrix.to/#/#rococo-faucet:matrix.org).
-
-Write:
-```
-!drip YOUR_SS_58_ADDRESS:1002
-```
+Visit [use.ink/faucet](https://use.ink/faucet/) and input your `polkadot-js` address to get some testnet tokens.
 
 You can see the funds under
 [the "Accounts" tab for the `Contracts` parachain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-contracts-rpc.polkadot.io#/accounts).
