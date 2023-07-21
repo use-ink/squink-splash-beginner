@@ -4,7 +4,10 @@
 
 [Installation instructions here](https://www.rust-lang.org/tools/install)
 
+
 ## Install `cargo-contract`
+
+Be sure to use rust version 1.69.0 
 
 ```bash
 rustup component add rust-src
